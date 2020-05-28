@@ -170,7 +170,7 @@ class News extends ContentEntityBase implements NewsInterface {
       ->setLabel(t('Title'))
       ->setDescription(t('Enter the News Title.'))
       ->setSettings([
-        'max_length' => 50,
+        'max_length' => 255,
         'text_processing' => 0,
       ])
       ->setDefaultValue('')
@@ -205,36 +205,36 @@ class News extends ContentEntityBase implements NewsInterface {
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
 	  
-	$fields['published_date'] = BaseFieldDefinition::create('datetime')
-		->setLabel(t('Published date'))
-		->setDescription(t('Published Date of the News Article.'))
-		->setRequired(true)
-		->setDisplayOptions('view', array(
-			'label' => 'above',
-			'type' => 'string',
-			'weight' => -2,
-		))
-		->setDisplayOptions('form', array(
-			'type' => 'date',
-			'weight' => -2,
-		))
-		->setDisplayConfigurable('form', TRUE)
-		->setDisplayConfigurable('view', TRUE);
+      $fields['published_date'] = BaseFieldDefinition::create('datetime')
+	->setLabel(t('Published date'))
+	->setDescription(t('Published Date of the News Article.'))
+	->setRequired(true)
+	->setDisplayOptions('view', array(
+		'label' => 'above',
+		'type' => 'string',
+		'weight' => -2,
+	))
+	->setDisplayOptions('form', array(
+		'type' => 'date',
+		'weight' => -2,
+	))
+	->setDisplayConfigurable('form', TRUE)
+	->setDisplayConfigurable('view', TRUE);
 	
-	$fields['expiry_date'] = BaseFieldDefinition::create('datetime')
-		->setLabel(t('Expiry date'))
-		->setDescription(t('Expiry Date of the News Article.'))
-		->setDisplayOptions('view', array(
-			'label' => 'above',
-			'type' => 'string',
-			'weight' => -1,
-		))
-		->setDisplayOptions('form', array(
-			'type' => 'date',
-			'weight' => -1,
-		))
-		->setDisplayConfigurable('form', TRUE)
-		->setDisplayConfigurable('view', TRUE);
+      $fields['expiry_date'] = BaseFieldDefinition::create('datetime')
+	->setLabel(t('Expiry date'))
+	->setDescription(t('Expiry Date of the News Article.'))
+	->setDisplayOptions('view', array(
+		'label' => 'above',
+		'type' => 'string',
+		'weight' => -1,
+	))
+	->setDisplayOptions('form', array(
+		'type' => 'date',
+		'weight' => -1,
+	))
+	->setDisplayConfigurable('form', TRUE)
+	->setDisplayConfigurable('view', TRUE);
 			
     $fields['status']->setDescription(t('A boolean indicating whether the News is published.'))
       ->setDisplayOptions('form', [
