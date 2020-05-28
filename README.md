@@ -18,10 +18,11 @@
    - Get Full List of News articles in JSON Format
      <domain-name>/jsonapi/news
 
-   - Pegignnation: 
+   - Pagination: 
      <domain-name>/jsonapi/news?page[limit]=10 (Populate the First 0-10 records)
      <domain-name>/jsonapi/news?page[limit]=10&page[offset]=10 (Populate the next 10-20 records)
      <domain-name>/jsonapi/news?page[limit]=10&page[offset]=20 (Populate the next 20-30 records)
+      ** Response Also contains the count of all the items, consumer is free to write their custom login for pager based on the totalCount.
 
    - Sorting:
 	 <domain-name>/jsonapi/news?sort=published_date (use + or blank to sort the record in ASC order)
