@@ -2,6 +2,8 @@ uuid: 6c8c81c2-f4a9-4884-817a-ad17aa2ae748
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: SYUUioAebqC_ucYfrT5QvKR4c5xXQfx2csAT7T10Dps
 id: content_publisher
 label: 'Content Publisher'
 weight: 5
@@ -10,8 +12,10 @@ permissions:
   - 'access administration pages'
   - 'access toolbar'
   - 'add news entities'
+  - 'administer news entities'
   - 'delete news entities'
   - 'edit news entities'
   - 'use text format full_html'
   - 'view published news entities'
   - 'view the administration theme'
+  - 'view unpublished news entities'

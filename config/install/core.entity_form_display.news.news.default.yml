@@ -6,6 +6,8 @@ dependencies:
     - datetime
     - news_api
     - text
+_core:
+  default_config_hash: 2bn-1MA_wZjKjI7Qu9pi-mSfNCD4GirlSYIGyL-MjZs
 id: news.news.default
 targetEntityType: news
 bundle: news
@@ -31,6 +33,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -40,5 +49,4 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
-  status: true
   user_id: true

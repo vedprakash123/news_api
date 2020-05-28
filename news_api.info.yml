@@ -6,3 +6,4 @@ package: 'Custom'
 dependencies:
   - jsonapi
   - jsonapi_extras
+  - jsonapi_defaults
