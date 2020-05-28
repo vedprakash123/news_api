@@ -1,0 +1,5 @@
+#News API CSS
+news_api.listing:
+  css:
+    theme:
+      assets/css/news.css: {}

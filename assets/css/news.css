@@ -1,0 +1,17 @@
+.view-news-article .view-header{
+	float: right;
+    width: auto;
+    margin-top: 74px;
+}
+.view-news-article .view-filters{
+	float: left;
+}
+
+.view-news-article .view-empty{
+	float: left;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #e2e2e2;
+    padding-top: 20px;
+    margin-top: 7px;
+}

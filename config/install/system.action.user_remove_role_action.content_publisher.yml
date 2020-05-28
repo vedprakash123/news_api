@@ -1,0 +1,14 @@
+uuid: bd8e212b-f918-4fe8-b552-df93dd415041
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.content_publisher
+  module:
+    - user
+id: user_remove_role_action.content_publisher
+label: 'Remove the Content Publisher role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: content_publisher

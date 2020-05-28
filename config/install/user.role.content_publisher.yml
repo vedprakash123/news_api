@@ -1,0 +1,17 @@
+uuid: 6c8c81c2-f4a9-4884-817a-ad17aa2ae748
+langcode: en
+status: true
+dependencies: {  }
+id: content_publisher
+label: 'Content Publisher'
+weight: 5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access toolbar'
+  - 'add news entities'
+  - 'delete news entities'
+  - 'edit news entities'
+  - 'use text format full_html'
+  - 'view published news entities'
+  - 'view the administration theme'

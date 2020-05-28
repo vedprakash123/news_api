@@ -1,0 +1,15 @@
+#Common List
+utility.links.collection:
+  title: 'Common List'
+  route_name: system.admin_structure
+  description: 'Common List'
+  parent: system.admin_structure
+  weight: -5
+  
+#News List
+entity.news.collection:
+  title: 'News'
+  route_name: entity.news.collection
+  description: 'List News entities'
+  parent: utility.links.collection
+  weight: 100

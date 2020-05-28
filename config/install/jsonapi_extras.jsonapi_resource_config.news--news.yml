@@ -1,0 +1,90 @@
+uuid: 154ff67b-e431-4311-a06e-a4e849100bc3
+langcode: en
+status: true
+dependencies:
+  module:
+    - jsonapi_defaults
+    - news_api
+third_party_settings:
+  jsonapi_defaults:
+    default_filter:
+      'filter:status#value': '1'
+_core:
+  default_config_hash: oGGB0Tt6ToXynkPBmt-tSg0qSjBqpr5oe1_irnlf_Rw
+id: news--news
+disabled: false
+path: news
+resourceType: news--news
+resourceFields:
+  id:
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+    disabled: false
+  status:
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+    disabled: false
+  user_id:
+    disabled: true
+    fieldName: user_id
+    publicName: user_id
+    enhancer:
+      id: ''
+  title:
+    fieldName: title
+    publicName: title
+    enhancer:
+      id: ''
+    disabled: false
+  description:
+    fieldName: description
+    publicName: description
+    enhancer:
+      id: ''
+    disabled: false
+  published_date:
+    fieldName: published_date
+    publicName: published_date
+    enhancer:
+      id: ''
+    disabled: false
+  expiry_date:
+    fieldName: expiry_date
+    publicName: expiry_date
+    enhancer:
+      id: ''
+    disabled: false
+  created:
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+    disabled: false
+  changed:
+    fieldName: changed
+    publicName: changed
+    enhancer:
+      id: ''
+    disabled: false
+  default_langcode:
+    disabled: true
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''

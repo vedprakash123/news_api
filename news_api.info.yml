@@ -1,0 +1,8 @@
+name: 'News API'
+type: module
+description: 'Expose Latest News API'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - jsonapi
+  - jsonapi_extras

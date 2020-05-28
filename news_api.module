@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ * Contains news_api.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements hook_help().
+ */
+function news_api_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the news_api module.
+    case 'help.page.news_api':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Expose Latest News') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+* Implements hook_views_pre_render().
+*/
+function news_api_views_pre_render(ViewExecutable $view) {
+  if (isset($view) && ($view->storage->id() == 'news_article')) {
+    $view->element['#attached']['library'][] = 'news_api/news_api.listing';
+  }
+}
